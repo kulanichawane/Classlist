@@ -1,0 +1,48 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content padding class="bg">
+  <div class="main">
+    <div class="titles">
+      <h1 align="center" class="headtitle">Class
+        <a class="list">List</a>
+      </h1>
+    </div>
+    <br>
+  
+    <ion-list>
+
+      <ion-input type="text" placeholder="Name"[(ngModel)]="name"></ion-input>
+      <hr>
+      <ion-input type="text" placeholder="Surname"[(ngModel)]="surname"></ion-input>
+  
+      <hr>
+
+      <ion-input type="text" placeholder="Gender" [(ngModel)]="gender"></ion-input>
+      <hr>
+      <ion-input type="text" placeholder="Student No" [(ngModel)]="stdno"></ion-input>
+      <hr>
+      <ion-input type="text" placeholder="Address" [(ngModel)]="address"></ion-input>
+      <hr>
+
+  
+
+   
+
+     
+
+    
+      <button ion-button class="btn" color="orange" (click)="add()" clear>Add</button>
+    </ion-list>
+  </div>
+
+</ion-content>
+
+<ion-footer class="footer">
+
+  <ion-title>
+    <h1 align="center" class="footertitle"></h1>
+  </ion-title>
+
+</ion-footer>

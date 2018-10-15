@@ -1,0 +1,54 @@
+<!--
+  Generated template for the ClasslistPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>classlist</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content  class="card-background-page" id="bg">
+
+
+
+
+
+  <h3 align="center" class="">{{check}}</h3>
+
+<!--   <ion-card *ngFor="let x of list;let a=index"> 
+
+    <img src="../../assets/imgs/photo-1491443508567-2e9d49b5961a.jpg" width="150px" height="150px"/> 
+    <div class="card-title">{{x.name}}</div>
+    <div class="card-subtitle">{{x.surname}}</div>
+    <button ion-button (click)="delete(a)">Delete</button><button ion-button (click)="update(a)">Update</button>
+  </ion-card> -->
+
+  <ion-card *ngFor="let x of list;let a=index">
+      <img src="../../assets/imgs/4k_default_yellow_windows_8_solid_wallpaper_by_duning-d7201yd.png" width="150px" height="150px"/>
+      <ion-card-content>
+        <ion-card-title>
+            {{x.name}} {{x.surname}}
+          </ion-card-title>
+        <p>
+        Student No:  {{x.stdno}}
+        </p>
+        <p>
+         Gender : {{x.gender}}
+        </p>
+        <p> Address :{{x.address}}</p>
+      </ion-card-content>
+      <button ion-button  (click)="update(a)" >Update</button> <button ion-button (click)=" delete(a)">Delete</button>
+    </ion-card>
+
+    <ion-fab right bottom>
+        <button ion-fab color="light" (click)="next()"><ion-icon name="add"  ></ion-icon></button>
+  
+      </ion-fab>
+    
+</ion-content>
